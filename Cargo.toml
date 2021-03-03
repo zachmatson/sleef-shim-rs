@@ -3,7 +3,6 @@ name = "sleef-shim-rs"
 version = "0.1.0"
 authors = ["zachmatson <zacharywdmatson@gmail.com>"]
 edition = "2018"
-links = "sleef"
 
 [lib]
 name = "sleef_shim"

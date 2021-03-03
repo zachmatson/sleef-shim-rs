@@ -3,11 +3,9 @@ fn main() {
         .define("BUILD_TESTS", "FALSE")
         .define("BUILD_SHARED_LIBS", "FALSE")
         .define("BUILD_GNUABI_LIBS", "FALSE")
+        .define("CMAKE_INSTALL_LIBDIR", "lib")
         .profile("Release")
         .build();
-    
-    println!("cargo:rustc-link-search=native={}", dst.display());
-    println!("cargo:rustc-link-lib=static=sleef");
 
     println!("cargo:rerun-if-changed=sleef");
 }
