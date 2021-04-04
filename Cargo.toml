@@ -1,5 +1,5 @@
 [package]
-name = "sleef-shim-rs"
+name = "sleef-shim"
 version = "0.1.0"
 authors = ["zachmatson <zacharywdmatson@gmail.com>"]
 edition = "2018"
@@ -8,6 +8,9 @@ edition = "2018"
 name = "sleef_shim"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+build-sleef = []
 
 [build-dependencies]
 cmake = "0.1"
